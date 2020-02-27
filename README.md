@@ -1,8 +1,6 @@
 # Cochlear-Implant-Simulator
 Cochlear implants are a hearing solution for people with a moderate to profound hearing loss.
 
-![GSR sensor](images/pulse.jpg)
-
 ## Hardware components
 * Wemos D1 Mini
 * 1 meter of WS2812B LEDSTRIP
@@ -54,7 +52,7 @@ Cut the LED strip to 20 LEDs, counting from DATA IN arrow pointing into the LED 
 The LED strip digital in is driven from D4. In code D4 this is PIN 2.
 
 Use a 330 Ohm series resistor.
-![schematic](images/schematic.jpg)
+(images/schematic.jpeg)
 
 Program the board using the Arduino IDE
 To use the Wemos board with your Arduino IDE the correct board manager has to be installed.
