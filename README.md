@@ -52,47 +52,64 @@ Cut the LED strip to 20 LEDs, counting from DATA IN arrow pointing into the LED 
 The LED strip digital in is driven from D4. In code D4 this is PIN 2.
 
 Use a 330 Ohm series resistor.
-![Schematic](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/schematic.jpeg)
+![Schematic](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/schematic.jpg)
 
-Program the board using the Arduino IDE
+## Program the board using the Arduino IDE
 To use the Wemos board with your Arduino IDE the correct board manager has to be installed.
+![Preferences](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/preferences.jpg)
 
 You need to install the following libraries: arduinoFTT and Adafruit Neopixel.
+![Libraries1](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/libraries1.jpg)
+![Libraries2](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/libraries2.jpg)
+![Libraries3](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/libraries3.jpg)
+![Libraries4](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/libraries4.jpg)
 
 Board settings:
+![board settings](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/board settings.jpg)
 
 Upload the code onto the board and test.
 
 The code consists of the following parts :
+* At start-up an animation is shown
+* 128 samples are read from the analogue input
+* FFT is calculated
+* FFT bins are grouped into 20 bark bands
+* At start-up initial scalers are calculated per band
+* Scalers per band slowly adapt to get all bands around the value of 100
+* A bark average is calculated
+* The LEDs for which the bark band level is above a certain threshold are powered
+* Read the next 128 samples
 
-At start-up an animation is shown
-128 samples are read from the analogue input
-FFT is calculated
-FFT bins are grouped into 20 bark bands
-At start-up initial scalers are calculated per band
-Scalers per band slowly adapt to get all bands around the value of 100
-A bark average is calculated
-The LEDs for which the bark band level is above a certain threshold are powered
-Read the next 128 samples
-Prepare the display
+## Prepare the display
 A 10 mm thick A5 sized plexiglass is used. I ordered a 21 x 21 cm board that I cut in two parts. One A5 size for the front panel (21 cm x 14, 8 cm) and one strip (21 cm x 6 cm) for the bottom part.
+![plexi1](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/plexi1.jpg)
 
 Find a drill template in the attachments on the bottom of this page. You need to drill holes that are at least 7 mm diameter. Use a 7 or more common 8 mm drill.
+![plexi2](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/plexi2.jpg)
+![plexi3](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/plexi3.jpg)
 
-Glue in the LED strip
+## Glue in the LED strip
 Fold the LED strip as shown below to help placing the individual LEDs in the holes. Besides removing the paper strip that exposes the glue, also the glue-foil can be removed, which makes handling the LED strip easier.
+![led1](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/led1.jpg)
 
 Use a hot glue gun to glue the LEDs one by one in the holes.
+![led2](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/led2.jpg)
 
 Put glue around the hole, then press the LEDs in the hot glue. Use a tool to hold the strip down not to burn your fingers.
+![led3](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/led3.jpg)
 
 Follow the spiral, make sure to start from the outside and end with the connecting wires in the middle.
+![led4](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/led4.jpg)
 
 Glue the bottom panel and front panel in an angle together.
+![led5](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/led5.jpg)
+![led6](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/led6.jpg)
 
 Glue the Arduino board and the microphone on to the bottom panel.
+![led7](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/led7.jpg)
 
 Print and place the front page onto the front panel using tape on the sides.
+![led8](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/led8.jpg)
 
 Put black tape around the plexiglass board.
 
