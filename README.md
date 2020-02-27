@@ -1,34 +1,22 @@
 # Cochlear-Implant-Simulator
 Cochlear implants are a hearing solution for people with a moderate to profound hearing loss.
 
-Intermediate
-Full instructions provided
-2 hours
-511
-Cochlear Implant Simulator
-Things used in this project
-Hardware components
+# Hardware components
 Wemos D1 Mini
-×	1	
 1 meter of WS2812B LEDSTRIP
-×	1	
 Electret Microphone with Amplifier MAX4466
-×	1	
 Acrylic plate 10 mm thick (148 x 210 mm and 30 x 210 mm)
-×	1	
-Software apps and online services
-Arduino IDE	
-Arduino IDE
-Hand tools and fabrication machines
-Drill / Driver, Cordless	
-Drill / Driver, Cordless
-Hot glue gun (generic)	
-Hot glue gun (generic)
-Soldering iron (generic)	
-Soldering iron (generic)
-Story
-Goal of this project is to create awareness for the cochlear implant as a hearing solution for people with a moderate to profound hearing loss. Furthermore it is a nice exercise to learn about Arduino, audio sampling, FFT processing and addressable LED strips.
 
+# Software apps and online services
+Arduino IDE	
+
+# Hand tools and fabrication machines
+Drill / Driver, Cordless	
+Hot glue gun (generic)
+Soldering iron (generic)
+
+# tory
+Goal of this project is to create awareness for the cochlear implant as a hearing solution for people with a moderate to profound hearing loss. Furthermore it is a nice exercise to learn about Arduino, audio sampling, FFT processing and addressable LED strips.
 
 The algorithm implemented is designed to show nice visuals under different noise conditions and different type of microphones. It is by no means a representation of the algorithms as implemented by the different cochlear implant manufactures.
 
@@ -38,7 +26,7 @@ In this project a microphone picks up the sound. A fast Arduino microcontroller 
 
 To sample at a decent rate and do the processing a fast Arduino board is used. The Wemos D1 mini is very cheap (2 euro) and does a good job. Typically this Arduino board is used for wifi-enabled applications but for now this feature is not used in this project. By optimizing the code I managed to sample sound at 10 kHz and update the LEDs 35 times per second. Sampling at 10 kHz results in sound up to 5 kHz being analysed.
 
-Instructions
+# Instructions
 Connect the microphone and LED strip to the Arduino board
 Program the board using the Arduino IDE
 Test the functioning
@@ -106,7 +94,7 @@ Print and place the front page onto the front panel using tape on the sides.
 
 Put black tape around the plexiglass board.
 
-Future improvements
+# Future improvements
 Add an analogue low pass filter between the microphone and the Arduino. Since the AD samples at 10 kHz audio frequencies above 5 kHz result in aliasing artifacts. By implementing a filter we can avoid that these frequencies get into the AD.
 
 Different color schemes might look nicer.
