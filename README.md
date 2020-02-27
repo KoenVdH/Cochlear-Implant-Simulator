@@ -1,16 +1,16 @@
 # Cochlear-Implant-Simulator
 Cochlear implants are a hearing solution for people with a moderate to profound hearing loss.
 
-## Hardware components
+## Hardware components:
 * Wemos D1 Mini
 * 1 meter of WS2812B LEDSTRIP
 * Electret Microphone with Amplifier MAX4466
 * Acrylic plate 10 mm thick (148 x 210 mm and 30 x 210 mm)
 
-## Software apps and online services
+## Software:
 * Arduino IDE	
 
-## Hand tools and fabrication machines
+## Hand tools and fabrication machines:
 * Drill / Driver, Cordless	
 * Hot glue gun (generic)
 * Soldering iron (generic)
