@@ -1,21 +1,21 @@
 # Cochlear-Implant-Simulator
 Cochlear implants are a hearing solution for people with a moderate to profound hearing loss.
 
-# Hardware components
-Wemos D1 Mini
-1 meter of WS2812B LEDSTRIP
-Electret Microphone with Amplifier MAX4466
-Acrylic plate 10 mm thick (148 x 210 mm and 30 x 210 mm)
+## Hardware components
+* Wemos D1 Mini
+* 1 meter of WS2812B LEDSTRIP
+* Electret Microphone with Amplifier MAX4466
+* Acrylic plate 10 mm thick (148 x 210 mm and 30 x 210 mm)
 
-# Software apps and online services
-Arduino IDE	
+## Software apps and online services
+* Arduino IDE	
 
-# Hand tools and fabrication machines
-Drill / Driver, Cordless	
-Hot glue gun (generic)
-Soldering iron (generic)
+## Hand tools and fabrication machines
+* Drill / Driver, Cordless	
+* Hot glue gun (generic)
+* Soldering iron (generic)
 
-# tory
+## Story
 Goal of this project is to create awareness for the cochlear implant as a hearing solution for people with a moderate to profound hearing loss. Furthermore it is a nice exercise to learn about Arduino, audio sampling, FFT processing and addressable LED strips.
 
 The algorithm implemented is designed to show nice visuals under different noise conditions and different type of microphones. It is by no means a representation of the algorithms as implemented by the different cochlear implant manufactures.
@@ -94,14 +94,11 @@ Print and place the front page onto the front panel using tape on the sides.
 
 Put black tape around the plexiglass board.
 
-# Future improvements
-Add an analogue low pass filter between the microphone and the Arduino. Since the AD samples at 10 kHz audio frequencies above 5 kHz result in aliasing artifacts. By implementing a filter we can avoid that these frequencies get into the AD.
-
-Different color schemes might look nicer.
-
-Different audio processing might look better.
-
-Since the Wemos D1 mini Arduino board has wifi, control using a smartphone can be implemented. Or even control over the internet.
+## Future improvements
+* Add an analogue low pass filter between the microphone and the Arduino. Since the AD samples at 10 kHz audio frequencies above 5 kHz result in aliasing artifacts. By implementing a filter we can avoid that these frequencies get into the AD.
+* Different color schemes might look nicer.
+* Different audio processing might look better.
+* Since the Wemos D1 mini Arduino board has wifi, control using a smartphone can be implemented. Or even control over the internet.
 
 All ideas for improvement welcome!
 
