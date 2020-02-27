@@ -52,20 +52,20 @@ Cut the LED strip to 20 LEDs, counting from DATA IN arrow pointing into the LED 
 The LED strip digital in is driven from D4. In code D4 this is PIN 2.
 
 Use a 330 Ohm series resistor.
-![Schematic](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/schematic.jpg)
+![Schematic](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/schematic.jpeg)
 
 ## Program the board using the Arduino IDE
 To use the Wemos board with your Arduino IDE the correct board manager has to be installed.
-![Preferences](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/preferences.jpg)
+![Preferences](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/preferences.jpeg)
 
 You need to install the following libraries: arduinoFTT and Adafruit Neopixel.
-![Libraries1](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/libraries1.jpg)
-![Libraries2](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/libraries2.jpg)
-![Libraries3](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/libraries3.jpg)
-![Libraries4](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/libraries4.jpg)
+![Libraries1](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/libraries1.jpeg)
+![Libraries2](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/libraries2.jpeg)
+![Libraries3](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/libraries3.jpeg)
+![Libraries4](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/libraries4.jpeg)
 
 Board settings:
-![board settings](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/board settings.jpg)
+![board settings](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/board settings.jpeg)
 
 Upload the code onto the board and test.
 
@@ -109,7 +109,7 @@ Glue the Arduino board and the microphone on to the bottom panel.
 ![led7](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/led7.jpg)
 
 Print and place the front page onto the front panel using tape on the sides.
-![led8](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/led8.jpg)
+![led8](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/led8.jpeg)
 
 Put black tape around the plexiglass board.
 
