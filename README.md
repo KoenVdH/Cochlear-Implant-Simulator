@@ -1,6 +1,8 @@
 # Cochlear-Implant-Simulator
 Cochlear implants are a hearing solution for people with a moderate to profound hearing loss.
 
+![GSR sensor](images/pulse.jpg)
+
 ## Hardware components
 * Wemos D1 Mini
 * 1 meter of WS2812B LEDSTRIP
@@ -27,16 +29,17 @@ In this project a microphone picks up the sound. A fast Arduino microcontroller 
 To sample at a decent rate and do the processing a fast Arduino board is used. The Wemos D1 mini is very cheap (2 euro) and does a good job. Typically this Arduino board is used for wifi-enabled applications but for now this feature is not used in this project. By optimizing the code I managed to sample sound at 10 kHz and update the LEDs 35 times per second. Sampling at 10 kHz results in sound up to 5 kHz being analysed.
 
 # Instructions
-Connect the microphone and LED strip to the Arduino board
-Program the board using the Arduino IDE
-Test the functioning
-Prepare the display
-Use the template to drill the holes for the LEDs
-Glue in the LED strip
-Glue the base to the front board
-Glue the Arduino and microphone
-Print the front sheet and tape
-Connect the microphoneboard and LED strip to the Arduino board
+* Connect the microphone and LED strip to the Arduino board
+* Program the board using the Arduino IDE
+* Test the functioning
+* Prepare the display
+* Use the template to drill the holes for the LEDs
+* Glue in the LED strip
+* Glue the base to the front board
+* Glue the Arduino and microphone
+* Print the front sheet and tape
+
+## Connect the microphoneboard and LED strip to the Arduino board
 
 The Wemos D1 provides 2 voltages: 3.3 V and 5 V.
 
@@ -51,6 +54,7 @@ Cut the LED strip to 20 LEDs, counting from DATA IN arrow pointing into the LED 
 The LED strip digital in is driven from D4. In code D4 this is PIN 2.
 
 Use a 330 Ohm series resistor.
+![schematic](images/schematic.jpg)
 
 Program the board using the Arduino IDE
 To use the Wemos board with your Arduino IDE the correct board manager has to be installed.
