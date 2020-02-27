@@ -52,7 +52,7 @@ Cut the LED strip to 20 LEDs, counting from DATA IN arrow pointing into the LED 
 The LED strip digital in is driven from D4. In code D4 this is PIN 2.
 
 Use a 330 Ohm series resistor.
-(images/schematic.jpeg)
+(https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/schematic.jpeg)
 
 Program the board using the Arduino IDE
 To use the Wemos board with your Arduino IDE the correct board manager has to be installed.
