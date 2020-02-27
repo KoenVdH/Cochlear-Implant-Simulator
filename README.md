@@ -65,7 +65,7 @@ You need to install the following libraries: arduinoFTT and Adafruit Neopixel.
 ![Libraries4](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/libraries4.jpeg)
 
 Board settings:
-![board settings](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/board settings.jpeg)
+![board settings](https://github.com/KoenVdH/Cochlear-Implant-Simulator/blob/master/images/board-settings.jpeg)
 
 Upload the code onto the board and test.
 
